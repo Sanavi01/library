@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Grape+Nuts&family=Open+Sans&family=Playfair+Display&family=Share+Tech&family=Share+Tech+Mono&display=swap');
 
 :root{
-    --color-sidebar: palegoldenrod
+    --color-sidebar: #85baff;
+    --color-primary: #ffff;
+    --color-secundary: #f1f5f5;
 }
-
 
 html,body{
     height: 100%;
@@ -26,5 +27,52 @@ html,body{
 #form {
     display: grid;
     gap: 10px;
+}
+
+#collection{
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1fr;
+}
+
+#titleDiv{
+    display: flex;
+    flex-direction: column;
+    background-color:var(--color-primary) ;
+    justify-content: center;
+    align-items: center;
+}
+
+#library{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    background-color:var(--color-secundary) ;
+}
+
+
+table{
+    border: 0px;
+}
+tr{
+    display: flex;
+}
+
+th{
+    background-color: var(--color-sidebar);
+}
+
+td{
+    background-color: var(--color-primary);
+    text-align: center;
+    
+}
+th, td {
+    display: flex;
+    border: solid black;
+    width: 150px;
+    min-height: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
