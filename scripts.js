@@ -6,6 +6,7 @@ let pagesInput = document.getElementById('pages')
 let readInput = document.getElementById('readornot')
 let rowCreateTable = 0
 let rowSelectTable = 0
+let book = 0
 
 const addBook = document.getElementById('addBook')
 addBook.addEventListener('click', () => {
@@ -76,7 +77,7 @@ function showBook() {
     selectorTable = `.position${rowSelectTable}-${columnSelectTable}`
     const deleteTable = document.querySelector(selectorTable)
     const deleteBtn = document.createElement('button')
-    deleteBtn.classList.add('deleteBtn')
+    deleteBtn.classList.add('deleteBtn') //the second class is added to search in the array and delete the book from it if is necessary
     deleteTable.appendChild(deleteBtn)
     //Finish the table (next book)
     rowSelectTable = rowSelectTable + 1
